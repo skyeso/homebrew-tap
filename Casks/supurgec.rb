@@ -1,6 +1,6 @@
 cask "supurgec" do
   version "0.1.0-alpha"
-  sha256 "64a6a5fb28b2ed36427287f365101de255d41a17a21b5fd3b4a68f78d1947653"
+  sha256 "123da361decf313b36486d31d7f5a2b07ce4f2e0b3d3762cf852f1e632fcbfff"
 
   url "https://github.com/skyeso/supurgec-macos/releases/download/v#{version}/Supurgec-v0.1-alpha-macOS.dmg"
   name "Süpürgeç"
