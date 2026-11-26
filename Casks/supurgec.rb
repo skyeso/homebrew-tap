@@ -1,6 +1,6 @@
 cask "supurgec" do
   version "0.1.0-alpha"
-  sha256 "e75ea2997ef9ddd1919e3c8650fdc03d0ea85b728a194a26ef1b95fbe387399b"
+  sha256 "ebb754759dd1c7df3e9ff232caa4e18ff0f325a1f3e513192cd225f5794ec322"
 
   url "https://github.com/skyeso/supurgec-macos/releases/download/v#{version}/Supurgec-v0.1-alpha-macOS.dmg"
   name "Süpürgeç"
@@ -17,11 +17,9 @@ cask "supurgec" do
                    sudo: false
   end
 
-  uninstall launchctl: "com.eso.supurgec.menubar",
-            quit:      "com.eso.supurgec"
+  uninstall quit: "com.eso.supurgec"
 
   zap trash: [
-    "~/Library/LaunchAgents/com.eso.supurgec.menubar.plist",
     "~/Library/Preferences/com.eso.supurgec.plist",
     "~/Library/Saved Application State/com.eso.supurgec.savedState",
   ]
