@@ -7,7 +7,7 @@ cask "supurgec" do
   desc "Yerel macOS temizlik, bakım, optimizasyon ve menü çubuğu sistem izleme uygulaması"
   homepage "https://github.com/skyeso/supurgec-macos"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Süpürgeç.app"
 
