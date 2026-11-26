@@ -1,25 +1,29 @@
 # skyeso/homebrew-tap
 
-**Süpürgeç** macOS uygulaması için resmi Homebrew Tap deposu.
+**Süpürgeç** ve **Ataç** macOS uygulamaları için resmi Homebrew Tap deposu.
 
-## Kurulum (Tek Komut)
+## Uygulamalar ve Kurulum
 
-```bash
-brew tap skyeso/tap && brew trust skyeso/tap && brew install --cask skyeso/tap/supurgec
-```
-
-> Kurulum sırasında Gatekeeper karantina bayrağı otomatik temizlenir ve **Süpürgeç** doğrudan `/Applications/Süpürgeç.app` konumuna yerleştirilir.
-
-## Güncelleme
+### 1. Ataç — Ultra Hafif Pano (Clipboard) Yöneticisi
 
 ```bash
-brew upgrade --cask supurgec
+brew tap skyeso/tap && brew install --cask skyeso/tap/atac
 ```
 
-## Kaldırma
+- Güncelleme: `brew upgrade --cask atac`
+- Kaldırma: `brew uninstall --cask atac`
+- Kaynak kod ve sürüm notları: [skyeso/atac-macos](https://github.com/skyeso/atac-macos)
+
+---
+
+### 2. Süpürgeç — macOS Bakım, Temizlik ve Sistem Stüdyosu
 
 ```bash
-brew uninstall --cask supurgec
+brew tap skyeso/tap && brew install --cask skyeso/tap/supurgec
 ```
 
-Kaynak kod ve sürüm notları: [skyeso/supurgec-macos](https://github.com/skyeso/supurgec-macos)
+- Güncelleme: `brew upgrade --cask supurgec`
+- Kaldırma: `brew uninstall --cask supurgec`
+- Kaynak kod ve sürüm notları: [skyeso/supurgec-macos](https://github.com/skyeso/supurgec-macos)
+
+> Kurulum sırasında Gatekeeper karantina bayrağı otomatik temizlenir ve uygulamalar doğrudan `/Applications` konumuna yerleştirilir.
