@@ -2,10 +2,10 @@
 
 **Süpürgeç** macOS uygulaması için resmi Homebrew Tap deposu.
 
-## Kurulum (Tek Satır)
+## Kurulum (Tek Komut)
 
 ```bash
-brew install --cask skyeso/tap/supurgec
+brew tap skyeso/tap && brew trust skyeso/tap && brew install --cask skyeso/tap/supurgec
 ```
 
 > Kurulum sırasında Gatekeeper karantina bayrağı otomatik temizlenir ve **Süpürgeç** doğrudan `/Applications/Süpürgeç.app` konumuna yerleştirilir.
