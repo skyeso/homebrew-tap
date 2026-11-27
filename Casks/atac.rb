@@ -1,6 +1,6 @@
 cask "atac" do
   version "0.1.0-alpha"
-  sha256 "10677c38d99f9fb56f097f2bc0d76377d878d9e89b150328ccec6b3dc05a8d0d"
+  sha256 "ce4cec0b447b863b9f7439b4fbada8a6e9f8e580969f1cd984bd664bb1533c56"
 
   url "https://github.com/skyeso/atac-macos/releases/download/v#{version}/Atac-v0.1-alpha-macOS.dmg"
   name "Ataç"
