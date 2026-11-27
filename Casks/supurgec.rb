@@ -1,8 +1,8 @@
 cask "supurgec" do
-  version "0.2.0-alpha"
-  sha256 "2acbdc879f7487e08d6e268b51ab479c7130bb5b8a939965b5772276cf060431"
+  version "0.3.0-alpha"
+  sha256 "f7be1cb78229a0a17583452bae946ec029b6258040a5deea63215a160f1c398f"
 
-  url "https://github.com/skyeso/supurgec-macos/releases/download/v#{version}/Supurgec-v0.2-alpha-macOS.dmg"
+  url "https://github.com/skyeso/supurgec-macos/releases/download/v#{version}/Supurgec-v0.3-alpha-macOS.dmg"
   name "Süpürgeç"
   desc "Yerel macOS temizlik, bakım, optimizasyon ve menü çubuğu sistem izleme uygulaması"
   homepage "https://github.com/skyeso/supurgec-macos"
