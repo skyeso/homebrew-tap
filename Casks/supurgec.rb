@@ -1,8 +1,8 @@
 cask "supurgec" do
-  version "0.1.0-alpha"
-  sha256 "7e1684e1e80169ca15613e87dee5a1f5f5cdcaf5d546c03cc4ce3c369ce3a49e"
+  version "0.2.0-alpha"
+  sha256 "2acbdc879f7487e08d6e268b51ab479c7130bb5b8a939965b5772276cf060431"
 
-  url "https://github.com/skyeso/supurgec-macos/releases/download/v#{version}/Supurgec-v0.1-alpha-macOS.dmg"
+  url "https://github.com/skyeso/supurgec-macos/releases/download/v#{version}/Supurgec-v0.2-alpha-macOS.dmg"
   name "Süpürgeç"
   desc "Yerel macOS temizlik, bakım, optimizasyon ve menü çubuğu sistem izleme uygulaması"
   homepage "https://github.com/skyeso/supurgec-macos"
@@ -11,10 +11,8 @@ cask "supurgec" do
 
   app "Süpürgeç.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/Süpürgeç.app"],
-                   sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-cr", "{{appdir}}/Süpürgeç.app"]
   end
 
   uninstall quit: "com.eso.supurgec"
